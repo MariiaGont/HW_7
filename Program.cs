@@ -6,12 +6,14 @@
 // 8 7,8 -7,1 9
 void Task47()
 {
-    Console.WriteLine("Программа задаёт двумерный массив размером 3*4, заполненный случайными вещественными числами,");
-    Console.WriteLine("округлёнными до одного знака.");
+    Console.WriteLine("Программа задаёт двумерный массив размером m*n, заполненный случайными вещественными числами,");
+    Console.WriteLine("округлёнными до одного знака. Задайте размер двумерного массива.");
+    Console.Write("m = ");
+    int m = Convert.ToInt32(Console.ReadLine());
+    Console.Write("n = ");
+    int n = Convert.ToInt32(Console.ReadLine());
     Console.WriteLine();
-    int rows = 3;
-    int columns = 4;
-    double[,] numbers = new double[rows, columns];
+    double[,] numbers = new double[m, n];
     FillArrayDecimals(numbers);
     PrintArrayDecimals(numbers);
     Console.WriteLine("\n");
@@ -29,7 +31,7 @@ void Task50()
     Console.WriteLine("Программа принимает на вход индексы элемента в двумерном массиве, и возвращает значение этого элемента.");
     Console.Write("Введите значение первого индекса: ");
     int i = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Введите значение первого индекса: ");
+    Console.Write("Введите значение второго индекса: ");
     int j = Convert.ToInt32(Console.ReadLine());
     Console.WriteLine();
     int rows = 5;
